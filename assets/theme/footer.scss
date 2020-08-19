@@ -1,0 +1,46 @@
+footer {
+  padding: 60px 0;
+  background: $white;
+
+  .logo {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  p.main {
+    line-height: 2rem;
+    font-size: .875rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+
+    margin-top: 3rem;
+
+    @include media-breakpoint-up("xl") {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        color: $body-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .a-big {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}

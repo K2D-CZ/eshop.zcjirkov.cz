@@ -1,0 +1,72 @@
+.slides {
+  .slides-carousel {
+    .owl-dots {
+      text-align: center;
+
+      .owl-dot {
+        width: 15px;
+        height: 15px;
+        background-color: $gray-800;
+        border-radius: 150px;
+        outline: none;
+        margin: 1rem .25rem;
+
+        &.active {
+          background-color: $primary;
+        }
+      }
+    }
+
+    .slide {
+      position: relative;
+      background-position: 20% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 25px;
+      height: 600px;
+
+      @include media-breakpoint-down("sm") {
+        height: 300px;
+      }
+
+      .slide-content-container {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 2rem;
+
+        > div {
+          background: $primary;
+          color: $white;
+          padding: 2rem;
+          border-radius: 15px;
+          text-align: center;
+
+          h2 {
+            color: $white;
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+          }
+
+          @include media-breakpoint-up("lg") {
+            padding: 2.625rem;
+          }
+        }
+
+        @include media-breakpoint-up("lg") {
+          padding: 2.625rem;
+        }
+      }
+    }
+  }
+}

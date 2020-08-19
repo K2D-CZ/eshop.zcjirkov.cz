@@ -1,0 +1,33 @@
+$card-deck-products: (
+  xs: 1,
+  sm: 2,
+  md: 2,
+  lg: 2,
+  xl: 3,
+  xxl: 3
+);
+
+$card-deck-products-4: (
+  xs: 1,
+  sm: 2,
+  md: 2,
+  lg: 2,
+  xl: 4,
+  xxl: 4
+);
+
+@each $name, $breakpoint in $grid-breakpoints {
+  @media (min-width: $breakpoint) {
+    .card-deck-products .card {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(#{100/map-get($card-deck-products, $name)}% - #{$grid-gutter-width});
+    }
+
+    .card-deck-products-4 .card {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(#{100/map-get($card-deck-products-4, $name)}% - #{$grid-gutter-width});
+    }
+  }
+}

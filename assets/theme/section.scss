@@ -1,0 +1,100 @@
+.categories {
+  background: $white;
+  padding: 60px 0;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    color: $primary;
+    font-size: 1.125rem;
+  }
+
+  .main-category {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+    img {
+      margin-right: .5rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-up("xl") {
+      margin-bottom: 0;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: $body-color;
+      }
+
+      &::before {
+        font-family: "Material Design Icons", sans-serif;
+        content: "\f142";
+        display: inline-block;
+        font-size: 1rem;
+        height: 1rem;
+        width: 1rem;
+        transform: scale(1.2);
+      }
+
+      &.primary {
+        font-weight: $font-weight-bold;
+
+        a {
+          color: $primary;
+        }
+
+        &::before {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.news {
+  padding: 60px 0;
+
+  .card {
+    margin-bottom: 35px;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+
+    a {
+      color: $gray-800;
+      text-decoration: none;
+    }
+  }
+
+  .date {
+    color: $primary;
+    margin-top: 1.5rem;
+    font-size: .875rem;
+    font-weight: 600;
+  }
+}
