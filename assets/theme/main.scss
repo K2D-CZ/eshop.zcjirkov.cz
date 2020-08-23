@@ -5,8 +5,12 @@ body {
   }
 }
 
-p:last-child {
-  margin-bottom: 0;
+p {
+  line-height: 2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .btn-primary {
@@ -208,4 +212,9 @@ p:last-child {
   .card-deck .card {
     display: block;
   }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: 'Material Design Icons';
+  content: '\f142';
 }

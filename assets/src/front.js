@@ -11,6 +11,9 @@ import "@mdi/font/css/materialdesignicons.min.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
 
+import "lightbox2/dist/css/lightbox.css";
+import lightbox from "lightbox2/dist/js/lightbox";
+
 document.addEventListener("DOMContentLoaded", () => {
     $('.slides-carousel').owlCarousel({
         items: 1,
@@ -21,5 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplaySpeed: 2000,
         autoplayHoverPause: true,
         dots: true
+    });
+
+    lightbox.option({
+        wrapAround: true,
+        showImageNumberLabel: false
     });
 });

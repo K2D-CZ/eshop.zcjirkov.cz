@@ -233,7 +233,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           16px !default;
 $grid-row-columns:            6 !default;
 
 
@@ -395,7 +395,7 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-y:         .5rem !default;
 $input-btn-padding-x:         1rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         .875rem !default;
@@ -405,8 +405,8 @@ $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .5rem !default;
-$input-btn-padding-x-sm:      1rem !default;
+$input-btn-padding-y-sm:      .3rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
@@ -422,15 +422,15 @@ $input-btn-border-width:      $border-width !default;
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
 
-$btn-padding-y:               .75rem !default;
-$btn-padding-x:               1.25rem !default;
+$btn-padding-y:               .5rem !default;
+$btn-padding-x:               1rem !default;
 $btn-font-family:             $font-family-base !default;
 $btn-font-size:               1rem !default;
 $btn-line-height:             $input-btn-line-height !default;
 $btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
 
-$btn-padding-y-sm:            .5rem !default;
-$btn-padding-x-sm:            1rem !default;
+$btn-padding-y-sm:            .3rem !default;
+$btn-padding-x-sm:            .75rem !default;
 $btn-font-size-sm:            .875rem !default;
 $btn-line-height-sm:          $input-btn-line-height-sm !default;
 
@@ -455,7 +455,7 @@ $btn-block-spacing-y:         .5rem !default;
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           150px !default;
 $btn-border-radius-lg:        150px !default;
-$btn-border-radius-sm:        150px !default;
+$btn-border-radius-sm:        5px !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -464,14 +464,14 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 $label-margin-bottom:                   .5rem !default;
 
-$input-padding-y:                       .75rem !default;
+$input-padding-y:                       .5rem !default;
 $input-padding-x:                       $input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
 $input-font-weight:                     $font-weight-base !default;
 $input-line-height:                     $input-btn-line-height !default;
 
-$input-padding-y-sm:                    .5rem !default;
+$input-padding-y-sm:                    .3rem !default;
 $input-padding-x-sm:                    $input-btn-padding-x-sm !default;
 $input-font-size-sm:                    $input-btn-font-size-sm !default;
 $input-line-height-sm:                  $input-btn-line-height-sm !default;
@@ -491,7 +491,7 @@ $input-box-shadow:                      none !default;
 
 $input-border-radius:                   150px !default;
 $input-border-radius-lg:                150px !default;
-$input-border-radius-sm:                150px !default;
+$input-border-radius-sm:                5px !default;
 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              lighten($component-active-bg, 25%) !default;

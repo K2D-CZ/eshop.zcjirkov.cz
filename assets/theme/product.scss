@@ -2,8 +2,11 @@
   position: relative;
   overflow: hidden;
 
+  margin-bottom: 1rem !important;
+
   .card-product-action {
     position: absolute;
+    z-index: 1;
 
     svg {
       polygon {
@@ -48,5 +51,19 @@
 
   .card-product-availability {
     font-weight: 500;
+  }
+
+  &.card-product-detail {
+    .card-product-price {
+      font-size: 1.5rem;
+
+      .card-product-price-old {
+        font-size: 1rem;
+      }
+    }
+
+    .card-product-availability {
+      font-size: 1.125rem;
+    }
   }
 }

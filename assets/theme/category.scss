@@ -1,0 +1,56 @@
+.category-subcategories {
+  margin-bottom: 15px;
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 1rem;
+
+    &.active {
+      color: $primary;
+    }
+  }
+
+  ul {
+    line-height: 36px;
+    margin-bottom: 0;
+
+    li > a {
+      text-decoration: none;
+      color: $body-color;
+
+      &:hover,
+      &.active {
+        color: $primary;
+
+        i::before {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.card-filter {
+  margin-bottom: 1rem;
+
+  .card-body {
+    font-size: .875rem;
+    padding: .75rem 1rem;
+  }
+
+  .form-inline {
+    .form-group {
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+  }
+}
