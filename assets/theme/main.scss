@@ -13,7 +13,8 @@ p {
   }
 }
 
-.btn-primary {
+.btn-primary,
+.btn-success {
   color: $white;
 }
 
@@ -217,4 +218,23 @@ p {
 .breadcrumb-item + .breadcrumb-item::before {
   font-family: 'Material Design Icons';
   content: '\f142';
+}
+
+.nav-cart {
+  .nav-item {
+    flex-basis: auto;
+
+    .nav-link {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      &.active {
+        font-weight: 700;
+      }
+
+      &.disabled {
+        background-color: $gray-100;
+      }
+    }
+  }
 }
