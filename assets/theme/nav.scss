@@ -6,12 +6,13 @@
   }
 
   .navbar-brand {
-    margin-right: 2rem;
+    margin-right: 0;
 
     img {
       height: 35px;
 
       @include media-breakpoint-up("sm") {
+        margin-right: 2rem;
         height: 60px;
       }
     }
@@ -38,7 +39,7 @@
     input {
       min-width: 250px;
 
-      @include media-breakpoint-between("lg", "lg") {
+      @include media-breakpoint-between("lg", "xl") {
         min-width: 150px;
       }
     }

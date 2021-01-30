@@ -96,7 +96,7 @@
 			</a>
 
             <a href="login.php" class="btn btn-primary">
-                <i class="mdi mdi-account mdi-scale-1-5"></i>
+                Patrik Kulíšek
             </a>
 
             <a href="#" class="btn btn-danger">
