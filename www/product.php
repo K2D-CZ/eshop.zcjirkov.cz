@@ -289,6 +289,16 @@
                                         <i class="mdi mdi-heart"></i>
                                     </button>
                                 </div>
+
+                                <h4 class="mt-4">Ke stažení</h4>
+                                <div class="list-group list-group-flush border-top border-bottom">
+                                    <a href="#" class="list-group-item list-group-item-action px-2 py-2">
+                                        <i class="mdi mdi-download mdi-scale-1-2 mr-1 text-primary"></i> nazev_souboru.pdf
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action px-2 py-2">
+                                        <i class="mdi mdi-download mdi-scale-1-2 mr-1 text-primary"></i> dalsi_soubor.pdf
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
